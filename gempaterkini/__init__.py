@@ -24,11 +24,18 @@ def ekstraksi_data():
         # dibawah ini adalah cara mencari tanggal dari bmkg dengan kata kunci css inspect element
         result = soup.find('span', {'class': 'waktu'})
         # split digunakan untuk memecah 2 data
-        result = result.text.split(', ')
-        tanggal = result[0]
-        waktu = result[1]
+
+        # result = result.text.split(', ')
+        # tanggal = result[0]
+        # waktu = result[1]
+        # atau bisa ditulis dengan kode berikut
+        tanggal = result.text.split(', ')[0]
+        waktu = result.text.split(', ')[1]
+
 
         result = soup.find('div', {'class': 'col-md-6 col-xs-6 gempabumi-detail no-padding'})
+        # untuk ul nya tidak perlu dituliskan, kenapa tanggal tidak masuk karena desainnya lebih simple dari
+        # elemen yang dibawah ini sehingga tidak masuk yang diulang dengan for in
         result = result.findChildren('li')
         i = 0
         magnitudo = None
