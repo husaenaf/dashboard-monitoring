@@ -1,9 +1,6 @@
 """
 aplikasi deteksi gempa terkini
 MODULARISASI DENGAN FUNCTION
-"""
-
-"""
 
 from gempaterkini import ekstraksi_data, tampilkan_data
 
@@ -15,8 +12,6 @@ if __name__ == '__main__':
 kode diatas benar, tapi kurang direkomendasikan, yang lebih direkomendasikan adalah
 bila ditulis dengan tulisan dibawah ini
 """
-
-
 
 import gempaterkini
 
