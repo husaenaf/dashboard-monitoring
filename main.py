@@ -23,7 +23,7 @@ def ekstraksi_data():
     hasil['magnitudo'] = 4.0
     hasil['lokasi'] = {'ls': 7.62, 'bt': 128.54}
     hasil['pusat'] = '101 km TimurLaut MALUKUBRTDAYA'
-    hasil['keterangan'] = 'tidak berpotensi TSUNAMI'
+    hasil['keterangan'] = 'tidakk berpotensi TSUNAMI'
 
     return hasil
 
